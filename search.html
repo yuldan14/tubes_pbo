@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Popup Pencarian</title>
+</head>
+<body>
+    <div class="search-container">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Cari...">
+            <button type="button" id="searchBtn">Cari</button>
+        </form>
+        <div class="search-popup" id="searchPopup">
+            <!-- Isi popup pencarian di sini -->
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <p>Hasil Pencarian:</p>
+            <ul id="searchResults"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

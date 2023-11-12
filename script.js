@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
@@ -187,3 +190,40 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+
+
+//Cari
+document.addEventListener('DOMContentLoaded', function () {
+    const searchBtn = document.getElementById('searchBtn');
+    const searchPopup = document.getElementById('searchPopup');
+    const closeBtn = document.getElementById('closeBtn');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    const searchForm = document.getElementById('searchForm');
+
+    // Menampilkan popup pencarian
+    searchBtn.addEventListener('click', function () {
+        searchPopup.style.display = 'block';
+        searchInput.focus();
+    });
+
+    // Menyembunyikan popup pencarian
+    closeBtn.addEventListener('click', function () {
+        searchPopup.style.display = 'none';
+    });
+
+    // Menampilkan hasil pencarian (contoh dummy)
+    searchForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        searchResults.innerHTML = '';
+        const searchTerm = searchInput.value;
+        // Tambahkan logika pencarian sesuai kebutuhan
+        const dummyResults = ['Hasil 1', 'Hasil 2', 'Hasil 3'];
+        dummyResults.forEach(result => {
+            const listItem = document.createElement('li');
+            listItem.textContent = result;
+            searchResults.appendChild(listItem);
+        });
+    });
+});
