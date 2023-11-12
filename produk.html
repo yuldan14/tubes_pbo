@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+     <!--Ini Navbar-->
+     <div class="navbar">
+        <div class="logo">SI HP</div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+            </ul>
+        </div>
+        <div class="profil">
+            <ul>
+                <li><a href=""><i data-feather="search"></i></a></li>
+
+                <li><a href=""><i data-feather="shopping-cart"></i></a></li>
+                <div class="dropdown">
+                    <button class="profile-btn"><i data-feather="user"></i></button>
+                    <div class="dropdown-content" id="profileDropdown">
+                        <!-- Isi dropdown akan diisi melalui JavaScript -->
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
