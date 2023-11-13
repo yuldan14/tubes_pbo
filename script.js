@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function startAutoSlide() {
         autoSlideInterval = setInterval(() => {
             nextSlide();
-        }, 5000);
+        }, 3000);
     }
 
     // Fungsi untuk menghentikan auto-slide

@@ -1,5 +1,6 @@
 :root{
     --navbar: #116a7b;
+    --button: #CDC2AE;
 }
 *{
     margin: 0;
@@ -299,4 +300,47 @@ footer{
     text-align: center;
 }
 
-/*Cari*/
+/*Produk*/
+.produk-container{
+    margin-bottom: 5rem;
+}
+.produk-container .header{
+    margin-top: 2rem;
+    padding-left: 5rem;
+    
+}
+
+.produk-container .produk-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+.produk-container .produk-list .produk{
+    width: 200px;
+    height: 400px;
+    margin: 4rem;
+}
+.produk-container .produk-list .produk .foto{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 2rem;
+}
+.produk-container .produk-list .produk .foto img{
+    width:200px;
+    height: 200px;
+}
+.produk-container .produk-list .produk .nama-produk,.rating, .keterangan{
+    padding: 0 20px;
+}
+.produk-container .produk-list .produk .info{
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--button);
+    display: flex;
+    justify-content: center;
+}
+.produk-container .produk-list .produk .info a{
+    color: var(--navbar);
+    text-decoration: none;
+    font-weight:700;
+}
