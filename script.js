@@ -220,3 +220,10 @@ function updateTotal() {
 
   // Panggil updateTotal saat halaman dimuat untuk menginisialisasi total
   window.onload = updateTotal;
+
+
+
+
+  //fungsi cart-foot
+
+   
