@@ -192,38 +192,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//fungsi untuk jumlah di cart
+function increment() {
+    var quantityInput = document.getElementById('quantity');
+    var currentQuantity = parseInt(quantityInput.value);
+    quantityInput.value = currentQuantity + 1;
+    updateTotal();
+  }
 
-//Cari
-document.addEventListener('DOMContentLoaded', function () {
-    const searchBtn = document.getElementById('searchBtn');
-    const searchPopup = document.getElementById('searchPopup');
-    const closeBtn = document.getElementById('closeBtn');
-    const searchInput = document.getElementById('searchInput');
-    const searchResults = document.getElementById('searchResults');
-    const searchForm = document.getElementById('searchForm');
+  function decrement() {
+    var quantityInput = document.getElementById('quantity');
+    var currentQuantity = parseInt(quantityInput.value);
+    if (currentQuantity > 1) {
+      quantityInput.value = currentQuantity - 1;
+      updateTotal();
+    }
+  }
 
-    // Menampilkan popup pencarian
-    searchBtn.addEventListener('click', function () {
-        searchPopup.style.display = 'block';
-        searchInput.focus();
-    });
+//fungsitotal harga Cart
+function updateTotal() {
+    var quantity = parseInt(document.getElementById('quantity').value);
+    var hargaPerItem = parseInt(document.querySelector('.harga').textContent.replace(/[^0-9]/g, '')); // Hanya ambil digit angka
+    var total = quantity * hargaPerItem;
+   // Menggunakan toLocaleString dengan opsi untuk mengganti pemisah ribuan dengan koma
+   document.querySelector('.total').innerHTML = 'Rp ' + total.toLocaleString('id-ID');
+}
 
-    // Menyembunyikan popup pencarian
-    closeBtn.addEventListener('click', function () {
-        searchPopup.style.display = 'none';
-    });
-
-    // Menampilkan hasil pencarian (contoh dummy)
-    searchForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        searchResults.innerHTML = '';
-        const searchTerm = searchInput.value;
-        // Tambahkan logika pencarian sesuai kebutuhan
-        const dummyResults = ['Hasil 1', 'Hasil 2', 'Hasil 3'];
-        dummyResults.forEach(result => {
-            const listItem = document.createElement('li');
-            listItem.textContent = result;
-            searchResults.appendChild(listItem);
-        });
-    });
-});
+  // Panggil updateTotal saat halaman dimuat untuk menginisialisasi total
+  window.onload = updateTotal;

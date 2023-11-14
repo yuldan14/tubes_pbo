@@ -17,7 +17,7 @@
 
 .container .text h2{
     text-align: center;
-    padding: 7em 0 3em 0;
+    padding: 4em 0 3em 0;
 }
 
 .container form input{
@@ -327,7 +327,6 @@ footer{
 }
 .produk-container .produk-list .produk .foto img{
     width:200px;
-    height: 200px;
 }
 .produk-container .produk-list .produk .nama-produk,.rating, .keterangan{
     padding: 0 20px;
@@ -344,3 +343,152 @@ footer{
     text-decoration: none;
     font-weight:700;
 }
+
+
+/*Info Produk*/
+.info-header{
+    display: flex;
+    background-color: var(--button);
+    height: 3rem;
+}
+.info-header .tombol-kembali{
+    width: 4rem;
+    margin: 0 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+.info-header .tombol-kembali a{
+    color: black;
+    text-decoration: none;
+}
+.info-header .tombol-kembali:hover{
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.info-header .head{
+    display: flex;
+    align-items: center;
+}
+
+.info-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-container .left{
+    width: 50vw;
+    height:100vh;
+}
+
+.info-container .right .info{
+    margin: 1rem 0 .2rem 0;
+    display: flex;
+}
+.info-container .right .info .kota{
+    padding: 0 23px;;
+}
+.info-container .right .info .rating-produk, .info .produk-terjual{
+    border-right: 1px solid grey;
+    padding: 0 23px ;
+}
+
+.info-container .right .harga{
+    background-color: var(--button);
+    margin: 2rem 1rem;
+    padding: 2rem;
+    color: var(--navbar);
+}
+.info-container .right .jumlah button{
+    width: 2rem;
+    height: 2rem;
+}
+.info-container .right .jumlah input{
+    width: 2rem;
+    height: 2rem;
+}
+
+.info-container .right .checkout{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-container .right .checkout #checkout{
+    cursor: pointer;
+    border: 1px solid var(--navbar);
+    margin: 0 1rem;
+    padding: .8rem;
+}
+.info-container .right .checkout .beli{
+    background-color: var(--navbar);
+    color: white;
+}
+.info-container .right .checkout .beli:hover{
+    background-color: rgba(17, 105, 123, 0.89);
+}
+
+/*Cart*/
+.cart-container{
+    background-color: var(--button);
+    margin: 2rem 3rem 0 3rem;
+}
+.cart-container .cart{
+    display:flex;
+    height: 5rem;
+}
+.cart-container .cart .check {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:8rem;
+}
+.cart-container .cart .foto{
+    width: 5rem;
+}
+.cart-container .cart .foto img{
+    width: 100%;
+    height: 100%;
+}
+.cart-container .cart .nama{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cart-container .cart .warna{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cart-container .cart .harga{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cart-container .cart .jumlah{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cart-container .cart .total{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#quantity {
+    width: 20px;
+    text-align: center;
+    height: 25px;
+  }
+
+.cart .jumlah button {
+    height: 25px;
+    width: 25px;
+    font-size: 18px;
+    cursor: pointer;
+  }

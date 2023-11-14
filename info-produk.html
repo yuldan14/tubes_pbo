@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Produk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!--Ini Navbar-->
+    <div class="navbar">
+        <div class="logo">SI HP</div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+            </ul>
+        </div>
+        <div class="profil">
+            <ul>
+                <li><a href="cart.html"><i data-feather="shopping-cart"></i></a></li>
+                <div class="dropdown">
+                    <button class="profile-btn"><i data-feather="user"></i></button>
+                    <div class="dropdown-content" id="profileDropdown">
+                        <!-- Isi dropdown akan diisi melalui JavaScript -->
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--Heaader-->
+    <div class="info-header">
+        <div class="tombol-kembali">
+            <a href="produk.html"><</a>
+        </div>
+        <div class="head">
+            <h4>Info Produk</h4>
+        </div>
+    </div>
+    <!--Ini Info produk-->
+    <div class="info-container">
+        <div class="left">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt="">
+        </div>
+        <div class="right">
+            <div class="nama-produk">
+                <h1>Samsung Galaxy S23 Ultra</h1>
+            </div>
+            <div class="info">
+                <div class="rating-produk" id="info">
+                    <h6>4.9</h6>
+                </div>
+                <div class="produk-terjual" id="info">
+                    <h6>1,300 Produk Terjual</h6>
+                </div>
+                <div class="kota" id="info">
+                    <h6>Kota Tasikmalaya</h6>
+                </div>
+            </div>
+            <div class="harga">
+                <h3>Rp13,999,999</h3>
+            </div>
+            <div class="jumlah">
+                <label for="quantity">Jumlah:</label>
+                <button onclick="decrement()">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button onclick="increment()">+</button>
+            </div>
+            <div class="checkout">
+                <div class="cart" id="checkout">
+                    <p>Masukkan Keranjang</p>
+                </div>
+                <div class="beli" id="checkout">
+                    <p>Beli Sekarang</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ini contact-->
+    <div class="contact">
+        <div class="footer">
+            <div class="header"><h1>SI HP</h1></div>
+            <div class="deskripi">SI HP adalah platform jual beli handphone yang dikembangkan oleh mahasiswa Informatika Universitas Siliwangi.</div>
+        </div>
+        <div class="footer">
+            <div class="header"><h1>Useful Link</h1></div>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="header"><h1>Contact Us</h1></div>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Ini footer-->
+    <footer>
+        <p>© Copyright SI HP. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
