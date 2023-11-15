@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
     <!--Heaader-->
@@ -21,6 +23,13 @@
         </div>
     </div>
     <!--Cart-->
+    <div class="cart-head">
+        <div class="check"><input type="checkbox" name="" id="">Select All</div>
+        <div class="harga">Harga</div>
+        <div class="jumlah">Jumlah</div>
+        <div class="total">Total</div>
+
+    </div>
     <div class="cart-container">
         <div class="cart">
             <div class="check"><input type="checkbox" name="" id=""></div>
@@ -28,14 +37,14 @@
             <div class="nama">Samsung S23 Ultra</div>
             <div class="warna">Warna Hitam</div>
             <div class="harga">
-                Rp13,999,999
+                Rp13.999.999
             </div>
             <div class="jumlah">
                 <button onclick="decrement()">-</button>
                 <input type="text" id="quantity" value="1" readonly>
                 <button onclick="increment()">+</button>
             </div>
-            <div class="total">Rp 13,999,999</div>
+            <div class="total">Rp 13.999.999</div>
         </div>
         <div class="cart">
             <div class="check"><input type="checkbox" name="" id=""></div>
@@ -43,14 +52,14 @@
             <div class="nama">Samsung S23 Ultra</div>
             <div class="warna">Warna Hitam</div>
             <div class="harga">
-                Rp13,999,999
+                Rp13.999.999
             </div>
             <div class="jumlah">
                 <button onclick="decrement()">-</button>
                 <input type="text" id="quantity" value="1" readonly>
                 <button onclick="increment()">+</button>
             </div>
-            <div class="total">Rp 13,999,999</div>
+            <div class="total">Rp 13.999.999</div>
         </div>
         <div class="cart">
             <div class="check"><input type="checkbox" name="" id=""></div>
@@ -58,14 +67,14 @@
             <div class="nama">Samsung S23 Ultra</div>
             <div class="warna">Warna Hitam</div>
             <div class="harga">
-                Rp13,999,999
+                Rp13.999.999
             </div>
             <div class="jumlah">
                 <button onclick="decrement()">-</button>
                 <input type="text" id="quantity" value="1" readonly>
                 <button onclick="increment()">+</button>
             </div>
-            <div class="total">Rp 13,999,999</div>
+            <div class="total">Rp 13.999.999</div>
         </div>
         <div class="cart">
             <div class="check"><input type="checkbox" name="" id=""></div>
@@ -73,14 +82,14 @@
             <div class="nama">Samsung S23 Ultra</div>
             <div class="warna">Warna Hitam</div>
             <div class="harga">
-                Rp13,999,999
+                Rp13.999.999
             </div>
             <div class="jumlah">
                 <button onclick="decrement()">-</button>
                 <input type="text" id="quantity" value="1" readonly>
                 <button onclick="increment()">+</button>
             </div>
-            <div class="total">Rp 13,999,999</div>
+            <div class="total">Rp 13.999.999</div>
         </div>
         <div class="cart">
             <div class="check"><input type="checkbox" name="" id=""></div>
@@ -88,14 +97,14 @@
             <div class="nama">Samsung S23 Ultra</div>
             <div class="warna">Warna Hitam</div>
             <div class="harga">
-                Rp13,999,999
+                Rp13.999.999
             </div>
             <div class="jumlah">
                 <button onclick="decrement()">-</button>
                 <input type="text" id="quantity" value="1" readonly>
                 <button onclick="increment()">+</button>
             </div>
-            <div class="total">Rp 13,999,999</div>
+            <div class="total">Rp 13.999.999</div>
         </div>
         <div class="cart">
             <div class="check"><input type="checkbox" name="" id=""></div>
@@ -103,139 +112,22 @@
             <div class="nama">Samsung S23 Ultra</div>
             <div class="warna">Warna Hitam</div>
             <div class="harga">
-                Rp13,999,999
+                Rp13.999.999
             </div>
             <div class="jumlah">
                 <button onclick="decrement()">-</button>
                 <input type="text" id="quantity" value="1" readonly>
                 <button onclick="increment()">+</button>
             </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
-        </div>
-        <div class="cart">
-            <div class="check"><input type="checkbox" name="" id=""></div>
-            <div class="foto"><img src="https://images.samsung.com/is/image/samsung/p6pim/id/2302/gallery/id-galaxy-s23-s918-sm-s918bzeqxid-534862502?$650_519_PNG$" alt=""></div>
-            <div class="nama">Samsung S23 Ultra</div>
-            <div class="warna">Warna Hitam</div>
-            <div class="harga">
-                Rp13,999,999
-            </div>
-            <div class="jumlah">
-                <button onclick="decrement()">-</button>
-                <input type="text" id="quantity" value="1" readonly>
-                <button onclick="increment()">+</button>
-            </div>
-            <div class="total">Rp 13,999,999</div>
+            <div class="total">Rp 13.999.999</div>
         </div>
     </div>
     <div class="cart-foot">
         <div class="jumlah-beli">
-            Total (0 Produk): Rp 13,999,999
+            Total (0 Produk): <span id="total-amount">Rp 0</span>
+        </div>
+        <div class="checkout">
+            <a href="">Checkout</a>
         </div>
     </div>
 

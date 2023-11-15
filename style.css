@@ -185,8 +185,8 @@
     padding: 16px;
     margin-top: -22px;
     font-size: 20px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: transparent;
     border: none;
     border-radius: 0 3px 3px 0;
 }
@@ -429,6 +429,33 @@ footer{
 }
 
 /*Cart*/
+.cart-head{
+    margin: 2rem 3rem 0 3rem;
+    background-color: rgba(0, 0, 0, 0.096);
+    margin-bottom: 2rem;
+    display:flex;
+    height: 3rem;
+    align-items: center;
+}
+.cart-head .check{
+    display: flex;
+    align-items:center;
+    margin-left: 3.3rem;
+}
+.cart-head .check input[type='checkbox']{
+    width: 20px;
+    margin-right: 1rem;
+    height: 20px;
+}
+.cart-head .harga{
+    margin-left: 30rem;
+}
+.cart-head .jumlah{
+    margin-left: 7.5rem;
+}
+.cart-head .total{
+    margin-left: 6rem;
+}
 .cart-container{
     margin: 2rem 3rem 0 3rem;
 }
@@ -443,6 +470,10 @@ footer{
     justify-content:center;
     align-items: center;
     width:8rem;
+}
+.cart-container .cart .check input[type='checkbox']{
+    width: 20px;
+    height: 20px;
 }
 .cart-container .cart .foto{
     width: 5rem;
@@ -495,9 +526,24 @@ footer{
   }
 .cart-foot{
     background-color: white;
-    border: 1px dotted grey;
-    width: 100%;
+    border-top: 1px dotted grey;
+    width: 96vw;
     position: fixed;
     bottom: 0;
     padding: 1rem 2rem;
+}
+.cart-foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-foot .checkout{
+    background-color: var(--navbar);
+    padding: .7rem ;
+    margin-right: 3rem;
+}
+.cart-foot .checkout a{
+    color: white;
+    text-decoration: none;
 }

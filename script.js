@@ -192,38 +192,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//fungsi untuk jumlah di cart
-function increment() {
-    var quantityInput = document.getElementById('quantity');
-    var currentQuantity = parseInt(quantityInput.value);
-    quantityInput.value = currentQuantity + 1;
-    updateTotal();
-  }
-
-  function decrement() {
-    var quantityInput = document.getElementById('quantity');
-    var currentQuantity = parseInt(quantityInput.value);
-    if (currentQuantity > 1) {
-      quantityInput.value = currentQuantity - 1;
-      updateTotal();
-    }
-  }
-
-//fungsitotal harga Cart
-function updateTotal() {
-    var quantity = parseInt(document.getElementById('quantity').value);
-    var hargaPerItem = parseInt(document.querySelector('.harga').textContent.replace(/[^0-9]/g, '')); // Hanya ambil digit angka
-    var total = quantity * hargaPerItem;
-   // Menggunakan toLocaleString dengan opsi untuk mengganti pemisah ribuan dengan koma
-   document.querySelector('.total').innerHTML = 'Rp ' + total.toLocaleString('id-ID');
-}
-
-  // Panggil updateTotal saat halaman dimuat untuk menginisialisasi total
-  window.onload = updateTotal;
-
-
-
 
   //fungsi cart-foot
+  $(document).ready(function () {
+    $(".cart").each(function () {
+        var $cart = $(this);
+        var $quantityInput = $cart.find(".jumlah input");
+        var $harga = parseInt($cart.find(".harga").text().replace(/[^0-9]/g, ''), 10);
+        var $total = $cart.find(".total");
 
-   
+        $cart.find(".jumlah button").on("click", function () {
+            var currentQuantity = parseInt($quantityInput.val(), 10);
+            var newQuantity = $(this).text() === "+" ? currentQuantity + 1 : Math.max(1, currentQuantity - 1);
+            $quantityInput.val(newQuantity);
+
+            var subtotal = $harga * newQuantity;
+            $total.text("Rp " + subtotal.toLocaleString());
+
+            updateTotalAmount();
+        });
+    });
+
+    $(".cart input[type='checkbox']").on("change", function () {
+        updateTotalAmount();
+    });
+
+    function updateTotalAmount() {
+        var totalAmount = 0;
+        var totalProducts = 0;
+
+        $(".cart input[type='checkbox']:checked").each(function () {
+            var subtotal = parseInt($(this).closest(".cart").find(".total").text().replace(/[^0-9]/g, ''), 10);
+            var quantity = parseInt($(this).closest(".cart").find(".jumlah input").val(), 10);
+            
+            totalAmount += subtotal;
+            totalProducts += quantity;
+        });
+
+        $(".jumlah-beli").text("Total (" + totalProducts.toLocaleString() + " Produk): Rp " + totalAmount.toLocaleString());
+    }
+});
